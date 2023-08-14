@@ -27,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { authInterceptorProviders } from './services/auth.interceptor';
 import { AdminDashboardComponent } from './pages/admin/admin-dashboard/admin-dashboard.component';
 import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
     ForgotPasswordDialogComponent,
     ForgotUsernameDialogComponent,
     AdminDashboardComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    LoadingComponent
   ],
   // entryComponents: [ForgotPasswordDialogComponent],
   imports: [
