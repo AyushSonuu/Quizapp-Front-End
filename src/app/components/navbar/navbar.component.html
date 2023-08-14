@@ -1,0 +1,128 @@
+<mat-toolbar class="custom-toolbar">
+  <span>Pariksha</span>
+  <span class="middle-text">Learning made easy!</span>
+  <a mat-icon-button routerLink="login" matTooltip="Login"
+  aria-label="Button that displays a tooltip when focused or hovered over">
+    <mat-icon >login</mat-icon>
+  </a>
+  <a mat-icon-button routerLink="register" matTooltip="Register"
+  aria-label="Button that displays a tooltip when focused or hovered over">
+    <mat-icon>app_registration
+    </mat-icon>
+  </a>
+</mat-toolbar>
+<div class="horizontal-line"></div>
+<mat-toolbar class="tool2 custom-toolbar">
+  <a mat-icon-button routerLink="/" matTooltip="Home"
+  aria-label="Button that displays a tooltip when focused or hovered over">
+    <mat-icon>home</mat-icon>
+  </a>
+  <span class="middle-text">
+
+                                        <!-- Courses Menu -->
+
+  <button mat-button [matMenuTriggerFor]="courses">Courses</button>
+  <mat-menu #courses="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="webdevelopment">Web Development</button>
+    <button mat-menu-item [matMenuTriggerFor]="DSA">DSA</button>
+  </mat-menu>
+
+  <mat-menu #webdevelopment="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="forntend">Fornt End</button>
+    <button mat-menu-item [matMenuTriggerFor]="backend">Back End</button>
+    <button mat-menu-item [matMenuTriggerFor]="databases">Databases</button>
+  </mat-menu>
+
+  <mat-menu #DSA="matMenu">
+    <button mat-menu-item>Data Structres - 1</button>
+    <button mat-menu-item>Data Structres - 2</button>
+  </mat-menu>
+
+  <mat-menu #forntend="matMenu">
+    <button mat-menu-item>HTML & CSS</button>
+    <button mat-menu-item>Javascript</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Angular</button>
+  </mat-menu>
+
+  <mat-menu #backend="matMenu">
+    <button mat-menu-item>JDBC</button>
+    <button mat-menu-item>Java Servlets</button>
+    <button mat-menu-item>Spring Boot</button>
+    <button mat-menu-item>Express.JS</button>
+  </mat-menu>
+
+  <mat-menu #databases="matMenu">
+    <button mat-menu-item>MySql</button>
+    <button mat-menu-item>MongoDB</button>
+    <button mat-menu-item>PostgreSQL</button>
+  </mat-menu>
+
+                                        <!-- Quizes Menu -->
+  <button mat-button [matMenuTriggerFor]="quizes">Quizes</button>
+  <mat-menu #quizes="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="webdevelopment">Web Development</button>
+    <button mat-menu-item [matMenuTriggerFor]="DSA">DSA</button>
+    <button mat-menu-item [matMenuTriggerFor]="gk">General Knowledge</button>
+  </mat-menu>
+
+  <mat-menu #webdevelopment="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="forntend">Fornt End</button>
+    <button mat-menu-item [matMenuTriggerFor]="backend">Back End</button>
+    <button mat-menu-item [matMenuTriggerFor]="databases">Databases</button>
+  </mat-menu>
+
+  <mat-menu #DSA="matMenu">
+    <button mat-menu-item>Arrays</button>
+    <button mat-menu-item>Strings</button>
+    <button mat-menu-item>Stacks & Queues</button>
+    <button mat-menu-item>Trees</button>
+    <button mat-menu-item>Grpahs</button>
+    <button mat-menu-item>Dynamic Programming</button>
+    <button mat-menu-item>Greedy Algorithms</button>
+  </mat-menu>
+
+  <mat-menu #gk="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="sports">Sports</button>
+    <button mat-menu-item >Current Affairs</button>
+    <button mat-menu-item >Countiers & Capitals</button>
+  </mat-menu>
+
+  <mat-menu #forntend="matMenu">
+    <button mat-menu-item>HTML</button>
+    <button mat-menu-item>CSS</button>
+    <button mat-menu-item>JAVASCRIPT</button>
+    <button mat-menu-item>ANGULAR</button>
+  </mat-menu>
+
+  <mat-menu #backend="matMenu">
+    <button mat-menu-item>JDBC</button>
+    <button mat-menu-item>Java Servlets</button>
+    <button mat-menu-item>Spring Boot</button>
+  </mat-menu>
+
+  <mat-menu #databases="matMenu">
+    <button mat-menu-item>MySql</button>
+    <button mat-menu-item>MongoDB</button>
+    <button mat-menu-item>PostgreSQL</button>
+  </mat-menu>
+
+  <mat-menu #sports="matMenu">
+    <button mat-menu-item>Cricket</button>
+    <button mat-menu-item>Football</button>
+    <button mat-menu-item>Tennis</button>
+    <button mat-menu-item>Hockey</button>
+    <button mat-menu-item>Badminton</button>
+  </mat-menu>
+</span>
+
+<a mat-icon-button routerLink="notes" matTooltip="Notes"
+aria-label="Button that displays a tooltip when focused or hovered over">
+  <mat-icon>menu_book</mat-icon>
+</a>
+
+  <a mat-icon-button routerLink="contacts" matTooltip="Contact Us"
+  aria-label="Button that displays a tooltip when focused or hovered over">
+    <mat-icon>contact_page</mat-icon>
+  </a>
+</mat-toolbar>

@@ -1,0 +1,16 @@
+.middle-text {
+    flex: 1;
+    text-align: center;
+  }
+  
+.custom-toolbar {
+    background-color:#455A64; /* Replace with your desired color */
+    color: white; /* Set text color for better contrast */
+}
+
+/* .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+

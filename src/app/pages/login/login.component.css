@@ -1,0 +1,15 @@
+.full-width{
+    width: 100%;
+}
+
+.body{
+    background-color: #607D8B;
+    height: 100vh;
+    width: 100vw;
+}
+
+.my-card{
+    margin-top: 10px;
+    padding: 10px;
+    margin: 10px;
+}

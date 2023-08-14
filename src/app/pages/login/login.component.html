@@ -1,0 +1,53 @@
+<div class="mt20"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <mat-card class="my-card">
+                <div class="container text-center">
+                    <img src="../../../assets/images/logo.jpg" alt="">
+                </div>
+                <h1 class="text-center">Login Here!</h1>
+                <form (ngSubmit)="formSubmit()">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input 
+                         [(ngModel)]="loginData.username"
+                         name="username"
+                         required
+                         matInput 
+                         placeholder="Username">
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input  
+                         [(ngModel)]="loginData.password"
+                         name="password"
+                         required
+                         type="password" 
+                         matInput 
+                         placeholder="Password">
+                    </mat-form-field>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 text-center">
+                                <button type="submit" mat-raised-button color="primary">Login</button>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <button (click)="clearForm() " mat-raised-button color="primary">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt20"></div>
+                    <div class="text-center">
+                        <a  (click)="openDialog()">Forgot Password?</a>
+                    </div>
+                    <div class="text-center">
+                        <a (click)="openDialog2()">Forgot Username?</a>
+                    </div>
+                </form>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<div class="mt20"></div>

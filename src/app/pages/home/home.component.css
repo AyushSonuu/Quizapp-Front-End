@@ -1,0 +1,27 @@
+.img{
+    width: 100%; /* Set the image width to 100% of the card's width */
+    height: auto; 
+}
+
+.my-card{
+    margin-top: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.my-card-2{
+    padding: 10px;
+    margin: 10px;
+}
+
+.my-card-img{
+    width: 100%; /* Set the image width to 100% of the card's width */
+    height: 200px;
+}
+
+.watch-btn{
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: #263238;
+    color: white;
+}

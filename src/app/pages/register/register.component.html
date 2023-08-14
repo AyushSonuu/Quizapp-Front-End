@@ -1,0 +1,92 @@
+<div class="mt20"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <mat-card class="my-card">
+                <div class="container text-center">
+                    <img src="../../../assets/images/logo.jpg" alt="">
+                </div>
+                <h1 class="text-center">Register Here!</h1>
+                <form (ngSubmit)="formSubmit()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>First Name</mat-label>
+                                <input 
+                                required
+                                [(ngModel)]="user.firstName"
+                                name="firstName"
+                                matInput 
+                                placeholder="First Name">
+                            </mat-form-field>
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Last Name</mat-label>
+                                <input 
+                                required
+                                [(ngModel)]="user.lastName"
+                                name="lastName"
+                                matInput 
+                                placeholder="Last Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input 
+                        [(ngModel)]="user.username"
+                         name="username"
+                        matInput 
+                        placeholder="Username">
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input 
+                        required
+                        [(ngModel)]="user.password"
+                         name="password"
+                        type="password" 
+                        matInput 
+                        placeholder="Password">
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>E-mail</mat-label>
+                        <input 
+                         required
+                         [(ngModel)]="user.email"
+                         name="email"
+                         type="email" 
+                         matInput 
+                         placeholder="E-mail">
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Phone Number</mat-label>
+                        <input
+                         required
+                         [(ngModel)]="user.phone"
+                         name="phone"
+                         type="number" 
+                         matInput 
+                         placeholder="Phone Number">
+                    </mat-form-field>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <button type="submit" mat-raised-button color="primary">Register</button>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <button (click)="clearForm()" mat-raised-button color="primary">Clear All</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<div class="mt20"></div>
